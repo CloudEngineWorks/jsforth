@@ -115,7 +115,7 @@ function interpret(input) {
   terminal = window.terminal;
   RECUR_COUNT++;
   
-  if (RECUR_COUNT == FORTH_ALLOCATION)
+  if (RECUR_COUNT === FORTH_ALLOCATION)
   {
     FORTH_ERROR = STACK_OVERFLOW;
     FORTH_ERROR_MESSAGE = "Stack Overflow. If this is generated incorrectly, the Stack can be reallocated. Default max recursion for a line of input is "+FORTH_DEFAULT_ALLOCATION+".";
